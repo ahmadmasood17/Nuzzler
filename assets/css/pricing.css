@@ -1,0 +1,105 @@
+.pricing__section {
+  background: linear-gradient(
+    150.63deg,
+    #5b6fb5 -6.89%,
+    #eae5c3 12.8%,
+    #eae5c3 39.89%,
+    #f68521 92.98%,
+    #ffffff 99.01%
+  );
+  padding: 125px 0 ;
+}
+.out__crd {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 10px;
+}
+.top__crd {
+  background-color: rgba(139, 70, 255, 1);
+  border-radius: 10px;
+  padding: 10px;
+}
+.top__crd.primium__crd{
+    background-color:rgba(246, 133, 33, 1);
+  
+  }
+  .top__crd.monthly__crd{
+    background-color:rgba(91, 111, 181, 1);
+  
+  }
+.price__dollor {
+  font-family: Krobold;
+  font-size: 45px;
+  font-weight: 900;
+  color: var(--white);
+}
+.inner__top__crd {
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  padding: 5px 0px 5px 5px;
+  width: 70%;
+}
+.inner__top__crd span {
+  color: var(--white);
+}
+.outer__pr p {
+  position: relative;
+  padding-left: 25px;
+}
+.outer__pr p::before {
+  content: "";
+  background-image: url("../images/tick.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+
+  
+}
+.defult__btn.pricing__btn{
+    width: 100%;
+    /* padding: 21px 94px; */
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing__video{
+    background: linear-gradient(135deg, #6A4FB4, #F09819);
+   padding: 80px 0;
+   margin: -45px 0 0;
+   position: relative;
+
+}
+.pricing__video__content h2{
+    max-width: 780px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .inner__top__crd {
+    width: 100%;
+  }
+
+}
+@media screen and (max-width: 767px) {
+  .pricing__section {
+    padding: 90px 0;
+  }
+  .outer__pr p{
+    margin: 0;
+  }
+  .out__crd{
+    gap: 13px !important;
+  }
+  .pricing__video {
+    padding: 50px 0 80px;
+}
+.inner__top__crd span{
+  font-size: 16px;
+}
+}
+
+

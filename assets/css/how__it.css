@@ -1,0 +1,122 @@
+.about__even__odd {
+  background: linear-gradient(
+    294.52deg,
+    #ffffff -37.56%,
+    #f68521 -26.16%,
+    #eae5c3 34.25%,
+    #eae5c3 74.34%,
+    #5b6fb5 103.46%
+  );
+  padding: 125px 0;
+  counter-reset: section;
+}
+
+.about__even__odd .inner__section {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.about__even__odd .inner__section:nth-child(odd) {
+  flex-direction: row;
+}
+
+.about__even__odd .inner__section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.inner__content h2::after {
+  counter-increment: section;
+  content: " " counter(section) "";
+  font-family: Krobold;
+  font-weight: 900;
+  font-size: 210px;
+  line-height: 93px;
+  color: rgba(246, 133, 33, 0.5);
+  position: absolute;
+  top: 129px;
+  right: 25px;
+  z-index: -1;
+}
+
+.about__even__odd .inner__section:nth-child(even) .inner__content h2::after {
+  left: -40px;
+  right: auto;
+  color: rgba(109, 133, 217, 0.3);
+  top: 70px;
+  z-index: -1;
+}
+.inner__content h2,
+.inner__content p,
+.inner__content h5 {
+  z-index: 999;
+}
+.inner__image {
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(
+    100deg,
+    rgba(91, 111, 181, 1),
+    rgba(180, 195, 215, 1),
+    rgba(238, 229, 171, 1),
+    rgba(246, 133, 33, 1)
+  );
+}
+.inner__image {
+  border-radius: 20px;
+}
+.video__content span {
+  position: relative;
+  padding-left: 25px;
+}
+.video__content span::before {
+  content: "";
+  background-image: url("../images/tick.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.video__content__wrrper,
+.video__content {
+  gap: 20px;
+}
+.inner__image img{
+  border-radius: 12px;
+}
+@media screen and (max-width: 1023px) {
+  
+  .about__even__odd {
+    padding: 60px 0;
+  }
+  .inner__content h2::after {
+    top: inherit;
+    right: 70px;
+    bottom: 261px;
+  }
+
+  .about__even__odd .inner__section:nth-child(even) .inner__content h2::after {
+    top: inherit;
+    right: 70px;
+    bottom: 242px;
+    left: inherit;
+  }
+}
+@media screen and (max-width: 767px) {
+  .video__content {
+    flex-direction: column;
+  }
+  .video__content span{
+    font-size:16px;
+  }
+  .about__even__odd .inner__section {
+    padding: 20px 0 !important;
+}
+.inner__image {
+ padding:12px ;
+}
+}
